@@ -36,7 +36,7 @@ int main() {
     int quantidade;
     int i;
 
-    printf("Quantos alunos serao cadastrados? ");
+    printf("Quantos alunos serao cadastrados?\n");
     scanf("%d", &quantidade);
 
     struct ALUNOS *alunos = (struct ALUNOS *)malloc(quantidade * sizeof(struct ALUNOS));
@@ -47,13 +47,12 @@ int main() {
     }
 
     for (i = 0; i < quantidade; i++) {
-        printf("\nAluno %d:\n", i + 1);
-        printf("Matricula: ");
+        printf("Matricula do aluno %d: \n", i + 1);
         scanf("%d", &alunos[i].matricula);
 
-        printf("Nota G1: ");
+        printf("Nota G1:\n");
         scanf("%lf", &alunos[i].g1);
-        printf("Nota G2: ");
+        printf("Nota G2: \n");
         scanf("%lf", &alunos[i].g2);
     }
 
